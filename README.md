@@ -210,7 +210,7 @@ The next query checks and updates the user login to the one the manager specifie
 This query updates the user to a new role specified by the manager and stores it in the database.
 
 
-Good User Interface
+# Good User Interface
 
 We made it easier for users to explore features. For example, when viewing the menu or more specifically when searching for by type, we made it use a drop down menu where the user can choose a choice for the types. This made it easier to use than typing all the information inside manually.
 
@@ -233,10 +233,7 @@ Moreover, for order status the user is given a drop down menu for possible cause
 
 
 
-
-
-
-Performance Tuning
+# Performance Tuning
 
 
 The index on orderID in the FoodOrder table is useful because orderID is frequently used in searches, such as when retrieving order details. Without an index, the database has to scan through every row to find the right order, which takes longer. With an index, it can quickly jump to the correct order, making searches much faster. 
@@ -249,37 +246,12 @@ For all these changes, the speed up  becomes (O(log n)) rather than linear time 
 
 
 
-
-
-
-
-Problems/Findings
+# Problems/Findings
 One of the challenges we faced was managing access control. We needed to make sure that customers couldn’t access manager or driver-only features. The simplest solution was to pass an argument called authorizedUser into every function that needed it. This allowed us to check the user’s role before granting access. If the user was a manager or driver, they could proceed. If not, the system would deny access, ensuring that only the right users could perform certain actions. This method made it easy to control permissions across the system.
 At first, when a user wanted to select a favorite item, we had all the possible food options hardcoded. However, as we continued working on the project, we realized that managers could add new food items to the menu. This made our original approach invalid since it wouldn't include newly added foods. To fix this, we decided to display all available food items from the database whenever a user wanted to update their favorite item. The user could then enter their choice, and we would check if that item existed in the database before updating their favorite food accordingly. This made the system more flexible and ensured it always reflected the current menu.
 
 
-Contributions
+#Contributions
 Hassan Fawaz: Handled special cases in the code, like preventing negative order quantities. Added input checks, such as confirming passwords and ensuring phone numbers have the correct number of digits. Worked on user registration, login, browsing the menu, managing profiles, placing orders, and viewing stores.
 Janelle Gwynn Hamoy: Added dropdown menus to make navigation easier. Created indexing for better performance. Managed access control, giving managers and drivers more permissions than customers. Worked on updating food details for managers and allowing drivers and managers to update order statuses. Developed order lookup features, including viewing order history, the last five orders, and searching for specific orders.
 Together: Debugged issues and tested edge cases. Helped each other identify and fix missing parts in the project.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
