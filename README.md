@@ -11,9 +11,11 @@ The implementation for the Pizza Store code uses a combination of Java and SQL t
 ### Within Function CreateUser:
 
 A query to ensure the the new user’s login is unique
+
 <img width="567" alt="Screenshot 2025-04-01 at 11 24 40 AM" src="https://github.com/user-attachments/assets/1299560d-8392-445c-b0ad-a594fe57f9ea" />
 
 An update query to add the newly created user into the database
+
 <img width="394" alt="Screenshot 2025-04-01 at 11 28 00 AM" src="https://github.com/user-attachments/assets/ce278351-06c2-4e79-8d8e-5e42912f9f35" />
 
 
