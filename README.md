@@ -177,16 +177,12 @@ First read in input for the item to be updated, and then use a query to output i
 
 Then a menu about which part of the item to update
 
-<img width="427" alt="Screenshot 2025-04-01 at 11 52 26 AM" src="https://github.com/user-attachments/assets/6c58262c-5f54-4bbc-bcd7-c96ee4b4be83" />
-
-An update query to change the ingredients of a specified item
-
-An update query to change the item’s type
-
 <img width="462" alt="Screenshot 2025-04-01 at 11 52 39 AM" src="https://github.com/user-attachments/assets/0796f456-5188-4d6a-8927-1026cf1b53e0" />
 
-<img width="430" alt="Screenshot 2025-04-01 at 11 58 12 AM" src="https://github.com/user-attachments/assets/13dcfd43-1965-4fba-b58d-dea58ab26f7d" />
+An update query to change the ingredients of a specified item
+An update query to change the item’s type
 
+<img width="427" alt="Screenshot 2025-04-01 at 11 52 26 AM" src="https://github.com/user-attachments/assets/6c58262c-5f54-4bbc-bcd7-c96ee4b4be83" />
 An update query to change the item’s price
 
 
